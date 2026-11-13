@@ -6,9 +6,9 @@
 body{
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    /* height: 150vh; */
     /* justify-content: center; */
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: #f0f0f0;
 } 
 header{
@@ -22,12 +22,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 15vh;
+    /* height: 15vh; */
     padding-left: 30px;
     padding-right: 30px;
+    flex-wrap: wrap;
 }
 .items{
-    /* border: 2px solid red; */
+    
     padding: 30px;
     /* font-size: large; */
     /* font-weight: 80-; */
@@ -92,7 +93,7 @@ header p{
     gap: 20px;
     height: 10vh;
     align-items: center;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 .Actions button{
     padding: 20px;
@@ -116,7 +117,7 @@ header p{
 }
 main{
     background: #303030;
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     /* display: flex; */
     
@@ -160,6 +161,10 @@ main h2{
     color: #aaaaaa;
     font-size: 18px;
 }
+.card:hover{
+    background-color: #484848;
+    transform: translateY(-4px);
+}
 .features{
     display: block;
     margin-left: 30px;
@@ -176,4 +181,26 @@ main h2{
     border-radius: 20px;
     padding-left: 20px;
     padding: 10px;
+}
+.feature i {
+    color: #0096FF;
+    margin-right: 12px;
+    width: 20px;
+    text-align: center;
+}
+@media (max-width: 981px) {
+    .container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links{
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .items{
+        padding: 10px 0;
+    }
+    .cards{
+        flex-wrap: wrap;
+    }
 }
