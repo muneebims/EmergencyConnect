@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <header id="Home">
        <div class="container">
         <div class="brand">
             <div class="items logo"> <svg class="ambulance-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -39,24 +39,24 @@
             A platform connecting emergency requesters, ambulance operators and hospitals.
         </p>
         <div class="Actions">
-            <div class="bat">
-                <button class="Request">Request Emergency</button>
-            </div>
-            <div class="bat">
-                <button class="learn">learn more</button></div>
+            <a href="request.html" class="bat">
+                <button class="Request" >Request Emergency</button>
+            </a>
+            <a href="#About" class="bat">
+                <button class="learn">learn more</button></a>
         </div>
     </header>
     <main>
         <div><h2>How EmergencyConnect Works</h2></div>
         
         <div class="cards">
-            <div class="card">
+            <a href="request.html" class="card" id="RequestForm">
                 <div>
                     <i class="fa-solid fa-clipboard-list feature-icon"></i>
                 </div>
                 <h3>Request</h3>
                 <p>Submit emergency details.</p>
-            </div>
+            </a>
             <div class="card">
                 <div >
                     <i class="fa-solid fa-tower-broadcast feature-icon"></i>
@@ -93,7 +93,37 @@
             demonstration prototype and must not be used 
             for real emergency service</h3>
         </div>
-  
+        <!-- <div class="line"></div> -->
+        <!-- about -->
+        <div id="About">
+            <h1>About EmergencyConnect</h1>
+            <p>EmergencyConneet is a university-developed, student-led demonstration prototype. Our mission is to explore and showcase innovative digital solutions for streamlining critical
+communication during medical emergencies. This platform aims to create a cohesive network, bridging emergency requesters, ambulance dispatchers, and hospitals to explore
+response time reductions and resource visibility. It is designed to be a tool for learning and future-focused research in the emergeney services sector.</p>
+        </div>
+        <div class="line"></div>
+        <div id="Contact">
+            <h1>Contact Us</h1>
+            <p>Have questions about EmergencyConnect project?</p>
+            <div class="sources">
+                <div class="source">
+                    <div class="1"><i class="fa-solid fa-envelope"></i></div>
+                    <div><h4>Email</h4><h6>muhammadmuneebims</h6></div>
+                   
+                </div>
+                <div class="source">
+                    <div class="1"><i class="fa-solid fa-phone"></i></div>
+                    <div><h4>Contact</h4><h6>03701642004</h6></div>
+                </div>
+                <div class="source">
+                    <div class="1"><i class="fa-brands fa-github"></i></div>
+                    <div><h4>Github</h4><h6>muhammadmuneebims</h6></div>
+                </div>
+            </div>
+        </div>
     </main>
+    <div class="end">
+        <h3>EmergencyConnect-HITMS Information Security Project</h3>
+    </div>
 </body>
 </html>
