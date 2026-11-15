@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="request.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="item brand">
+            <div class="logo">
+                <svg class="ambulance-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M10 10h4M12 8v4"></path>
+                        <path d="M4 16h2a2 2 0 1 0 4 0h4a2 2 0 1 0 4 0h2v-5a2 2 0 0 0-2-2H4z"></path>
+                        <circle cx="7.5" cy="16.5" r="1.5"></circle>
+                        <circle cx="16.5" cy="16.5" r="1.5"></circle>
+                        <path d="M16 9h3l2 3v4h-1"></path>
+                    </svg>
+            </div>
+            <div class="title"><h1>EmergencyConnect</h1></div>
+        </div>
+        <div class="item nav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="http://127.0.0.1:3000/index.html?vscode-livepreview=true#:~:text=real%20emergency%20service-,About,-EmergencyConnect">About</a>
+                <a href="hospital.html">Hospital</a>
+                <a href="index.html">Contact</a>
+                <a href="#login" id="login">login</a>
+            </nav>
+        </div>
+    </header>
+    <div class="line"></div>
+    <main>
+        <h3>Request Emergency Assistance</h3>
+        <p>Fill out the Form below to submit an urgent request for 
+            Assistance
+        </p>
+        <form action="">
+            <div class="box name">
+                <label for="name">Full Name</label>
+                <div class="input-container">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" ></div>
+            </div>
+            <div class="box number">
+                <label for="number">Contact Number</label>
+                <div class="input-container">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel">
+                </div>
+            </div>
+            <div class="box category">
+                <label for="category">Emergency category</label>
+                <select name="category" id="category">
+                    <option value="Road accident">Road Accident</option>
+                    <option value="heart attack">heart attack</option>
+                </select>
+            </div>
+            <div class="box detail">
+                <label for="detail">Bried Patient Details</label>
+                <textarea rows="6" name="detail" id="detail"></textarea>
+            </div>
+            <div class="box address">
+                <label for="address">Incident Address (location of Emergency)</label>
+                <div class="input-container">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" id="address">
+                </div>
+            </div>
+            <div class="submit">
+                <button type="submit">
+                    Submit Emergency Request
+                    <i class="fa-solid fa-truck-medical"></i>
+                </button>
+            </div>
+        </form>
+        <div class="line"></div>
+        <h3>How EmergencyConnect Works</h3>
+        <div class="cards">
+            <div class="card">
+                <div class="item"><i class="fa-solid fa-clipboard-list feature-icon"></i></div>
+                <div class="item title">request</div>
+                <div class="item para">this is p</div>
+            </div>
+            <div class="card">
+                <div class="item"><i class="fa-solid fa-tower-broadcast feature-icon"></i></div>
+                <div class="item title">Dispatch</div>
+                <div class="item para">this is p</div>
+            </div>
+            <div class="card">
+                <div class="item"> <i class="fa-solid fa-hospital feature-icon"></i></div>
+                <div class="item title">hospitals</div>
+                <div class="item para">this is p</div>
+            </div>
+        </div>
+        <div class="disclaimer">
+            <div class="m">this is discalimer box</div>
+        </div>
+    </main>
+    <footer>
+        <h4>EmergencyConnect Web Development Project</h4>
+    </footer>
+</body>
+</html> 
