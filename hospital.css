@@ -103,3 +103,46 @@ form input{
     
     /* width: 95%; */
 }
+
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: none;
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 15px;
+
+
+}
+.card img{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
+    transition: transform 0.5s ease;
+}
+.card img:hover{
+    transform: scale(1.01);
+}
+.hospitalname h3{
+    margin: 10px;
+    font-size: 33px;
+}
+.disclaimer{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
+}
+.disclaimer h4{
+    padding: 10px;
+}
