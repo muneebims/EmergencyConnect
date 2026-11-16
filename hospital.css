@@ -1,0 +1,105 @@
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000;
+    /* display: flex; */
+    /* margin: 10px; */
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    border: none;
+    padding: 30px;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    margin: 30px;
+    background: #123B5D;
+}
+.brand{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    flex-wrap: wrap;
+}
+.logo i{
+    font-size: 36px;
+    transition: transform 0.9s ease;
+}
+.logo i:hover{
+    transform: scale(1.4);
+    color: red;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+nav a{
+    text-decoration: none;
+    font-size: larger;
+    transition: transform 0.5s ease;
+}
+nav a:hover{
+    transform: scale(1.1);
+    color: aqua;
+}
+header .title{
+    transition: transform 0.5s ease;
+    cursor: pointer;
+}
+header .title:hover{
+    transform: scale(1.2);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin: 30px;
+    background: #F2F7FA;
+    padding: 10px;
+    border-radius: 20px;
+}
+main *{
+    color: #123B5D;
+    /* margin: 10px; */
+}
+main h1{
+    margin: 10px;
+}
+main p{
+    margin: 10px;
+}
+form{
+    background: #FFFFFF;
+    /* padding: 10px; */
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* width: 100%; */
+    border-radius: 20px;
+    padding: 10px;
+    gap: 12px;
+    
+}
+form input{
+    border: none;
+    flex: 1;
+    background: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 1px;
+    
+    /* width: 95%; */
+}
